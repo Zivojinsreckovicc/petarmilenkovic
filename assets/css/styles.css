@@ -4369,6 +4369,13 @@ button.animate-btn::after,
   inset: 0;
   z-index: -1;
 }
+.section-hero-v1 .bg-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
 .section-hero-v1 .bg-video .video-overlay {
   position: absolute;
   inset: 0;
