@@ -4350,10 +4350,10 @@ button.animate-btn::after,
   align-items: end;
 }
 .section-hero-v1 .davies-large {
-  font-size: clamp(80px, 16vw, 200px);
-  line-height: clamp(96px, 14vw, 176px);
+  font-size: clamp(40px, 8.2vw, 118px);
+  line-height: clamp(48px, 8.4vw, 126px);
   font-weight: 550;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.035em;
 }
 .section-hero-v1 .overlay {
   position: absolute;
