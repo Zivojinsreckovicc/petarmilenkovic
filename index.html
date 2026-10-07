@@ -156,7 +156,7 @@
                                         GLOBAL FINANCE LEADER
                                     </p>
                                     <span>
-                                        © 2025
+                                        © <span class="js-current-year">2026</span>
                                     </span>
                                 </div>
                                 <div class="bot">
@@ -1346,6 +1346,11 @@
     <script src="assets/js/gsapAnimation.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('.js-current-year').forEach(function (el) {
+            el.textContent = new Date().getFullYear();
+        });
+    </script>
 </body>
 
 </html>
