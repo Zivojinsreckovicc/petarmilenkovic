@@ -315,7 +315,7 @@
                         <div class="col-6 col-md-4">
                             <div class="col-right">
                                 <p class="text-display-2 letter-space--3 fw-semibold">
-                                    20<span class="text-primary">25</span>
+                                    <span class="js-year-start">20</span><span class="text-primary js-year-end">26</span>
                                 </p>
                             </div>
                         </div>
@@ -1347,8 +1347,15 @@
 
     <script src="assets/js/main.js"></script>
     <script>
+        var currentYear = String(new Date().getFullYear());
         document.querySelectorAll('.js-current-year').forEach(function (el) {
-            el.textContent = new Date().getFullYear();
+            el.textContent = currentYear;
+        });
+        document.querySelectorAll('.js-year-start').forEach(function (el) {
+            el.textContent = currentYear.slice(0, 2);
+        });
+        document.querySelectorAll('.js-year-end').forEach(function (el) {
+            el.textContent = currentYear.slice(2);
         });
     </script>
 </body>
